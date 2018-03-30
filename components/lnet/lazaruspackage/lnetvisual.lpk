@@ -4,7 +4,7 @@
     <Name Value="lnetvisual"/>
     <Author Value="Aleš Katona, Micha Nelissen"/>
     <CompilerOptions>
-      <Version Value="10"/>
+<      <Version Value="10"/>
       <SearchPaths>
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
@@ -16,7 +16,17 @@
       </Parsing>
       <CodeGeneration>
         <SmartLinkUnit Value="True"/>
-        <Optimizations>
+>>>>>>>+HEAD
+======
+       <Version Value="5"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <CodeGeneration>
+        <SmartLinkUnit Value="True"/>
+        <Generate Value="Faster"/>
+>>>>>>>-beb31d1
+       <Optimizations>
           <OptimizationLevel Value="2"/>
         </Optimizations>
       </CodeGeneration>
@@ -31,19 +41,26 @@
           <ShowHints Value="False"/>
           <ShowGenInfo Value="False"/>
         </Verbosity>
-        <CompilerMessages>
+<        <CompilerMessages>
           <UseMsgFile Value="True"/>
         </CompilerMessages>
         <CustomOptions Value="-dLNET_VISUAL"/>
-        <CompilerPath Value="$(CompPath)"/>
+>>>>>>>+HEAD
+======
+>>>>>>>>-beb31d1
+       <CompilerPath Value="$(CompPath)"/>
       </Other>
     </CompilerOptions>
     <Description Value="Lightweight Networking Library, or lNet is a networking suite integrated with Lazarus to provide simple and effective means to use TCP, UDP, FTP, SMTP, Telnet and HTTP protocols over the net.
 "/>
     <License Value="LGPL with exception, see LICENSE and LICENSE.addon
 "/>
-    <Version Minor="6" Release="6"/>
-    <Files Count="7">
+<    <Version Minor="6" Release="6"/>
+>>>>>>>+HEAD
+======
+     <Version Minor="6" Release="2"/>
+>>>>>>>-beb31d1
+   <Files Count="7">
       <Item1>
         <Filename Value="lclnet.pas"/>
         <UnitName Value="LCLNet"/>
@@ -88,8 +105,12 @@
       </Item3>
     </RequiredPkgs>
     <UsageOptions>
-      <UnitPath Value="$(PkgOutDir)"/>
-    </UsageOptions>
+<      <UnitPath Value="$(PkgOutDir)"/>
+>>>>>>>+HEAD
+======
+       <UnitPath Value="$(PkgOutDir)/"/>
+>>>>>>>-beb31d1
+   </UsageOptions>
     <PublishOptions>
       <Version Value="2"/>
       <IgnoreBinaries Value="False"/>
